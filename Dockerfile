@@ -1,5 +1,5 @@
 # Package the application as a war file
-FROM maven:3.6.3-ibmjava-8-alpine AS builder
+FROM s390x/maven:3-ibmjava-8 AS builder
 LABEL maintainer="IBM Java Engineering at IBM Cloud"
 COPY pom.xml ./
 COPY src src/
